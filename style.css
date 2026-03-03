@@ -1,0 +1,205 @@
+
+
+.body{
+    background-color: rgb(37, 29, 29);
+}
+
+
+.box1:hover{
+            opacity: 0.9;}
+        .box1{
+        position: absolute;
+        border: solid darkgrey;
+        width: 400px;
+        height: 22px;
+       border-radius: 10px;
+       margin-top: 12px;
+       margin-left: 10px;
+       border-color: rgb(19, 18, 17);
+      }
+
+.anime{
+    position: absolute;
+    color:rgb(235, 232, 232);
+    font-size: 17px;
+    margin-top: 20px;
+    margin-left: 1080px;
+    font-weight: bolder;
+    cursor:pointer;
+    color: orange;
+}
+.hub{
+    position: absolute;
+    color:rgb(235, 232, 232);
+    font-size: 17px;
+    margin-top: 35px;
+    margin-left: 1088px;
+    font-weight: bolder;
+    cursor:pointer;
+    color: rgb(236, 242, 246);
+}
+.animehub:hover{
+    opacity: 0.5;
+}
+
+.A{
+    position: absolute;
+    font-size: 40px;
+    font-weight: bolder;color:white;
+    margin-left: 440px;
+    cursor: pointer;
+}
+
+.H{
+    position: absolute;
+    font-size: 40px;
+    font-weight: bolder;color: coral;
+    margin-left: 560px;
+    cursor: pointer;
+}
+.vid{
+    position: absolute;
+    height: 40px;
+    width: auto;
+    margin-top: 6px;
+    margin-left: 635px;
+    cursor: pointer;
+}
+.home{
+    position: absolute;
+    font-weight: bold;
+    font-size: 23px;
+    color: rgb(148, 72, 31);
+    margin-top: 70px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.home:hover{
+    opacity: 0.8;
+     background-color: rgb(168, 157, 140);
+    border-radius: 5px;
+}
+
+.action{
+    position: absolute;
+    font-weight: bold;
+    font-size: 23px;
+    color: rgb(148, 72, 31);
+    margin-top: 70px;
+    margin-left: 120px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.action:hover{
+    opacity: 0.8;
+    background-color: rgb(168, 157, 140);
+    border-radius: 5px;
+}
+
+.comedy{
+    position: absolute;
+    font-weight: bold;
+    font-size: 23px;
+    color: rgb(148, 72, 31);
+    margin-top: 70px;
+    margin-left: 220px;
+    cursor: pointer;
+}
+.comedy:hover{
+    opacity: 0.8;
+    background-color: rgb(168, 157, 140);
+    border-radius: 5px;
+
+}
+.about{
+    position: absolute;
+    margin-top: 150px;
+}
+
+.DS{
+    position: absolute;
+    object-fit: cover;
+    width: 500px;
+    height: 180px;
+    margin-top: 78px;
+    margin-left: 320px;
+    
+}
+.HXH {
+    position: absolute;
+    height: 130px;
+    width: 250px;
+    margin-top: 275px;
+    margin-left: 15px;
+    object-fit: cover;
+   
+}
+.OPM{
+    position: absolute;
+    height: 130px;
+    width: 250px;
+    margin-top: 430px;
+    margin-left: 15px;
+    object-fit: cover;
+}
+.OP{
+    position: absolute;
+    height: 130px;
+    width: 250px;
+    margin-top: 275px;
+    margin-left: 300px;
+    object-fit: cover;
+}
+.BC{
+    position: absolute;
+    height: 130px;
+    width: 250px;
+    margin-left: 300px;
+    margin-top: 430px;
+    object-fit: cover;
+}
+.SL{
+    position:absolute;
+    object-fit: cover;
+    height: 130px;
+    width: 250px;
+    margin-top:275px;
+    margin-left: 585px;
+}
+.NS{
+    position:absolute;
+    object-fit: cover;
+    height: 130px;
+    width: 250px;
+    margin-top:430px;
+    margin-left: 585px;
+}
+.DB{
+    position:absolute;
+    object-fit: cover;
+    height: 130px;
+    width: 250px;
+    margin-top:275px;
+    margin-left: 870px;
+}
+.SXF{
+    position:absolute;
+    object-fit: cover;
+    height: 130px;
+    width: 250px;
+    margin-top:430px;
+    margin-left: 870px;
+}
+.highlight{
+    position: absolute;
+    object-fit:cover;
+    width: 800px;
+    height: 450px;
+    margin-top: 130px;
+    margin-left: 150px;
+    cursor: pointer;
+    
+    
+}
+
