@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+
+   .home{
+    position: absolute;
+    font-weight: bold;
+    font-size: 23px;
+    color: rgb(148, 72, 31);
+    margin-top: 70px;
+    margin-left: 20px; 
+    cursor: pointer;
+    background-color:  rgb(163, 163, 144);
+    border-radius: 2px;
+}
+.home:hover{
+    opacity: 0.8;
+     background-color: rgb(168, 157, 140);
+    border-radius: 2px;
+}
+ 
+</style>
+<body class="body">
+
+   <div> 
+    <div class="AnimeHUB" onclick="goTohighlight()" title="Visit">
+        <Script>
+        function goTohighlight(){
+            window.location.href="Highlight.html";
+        }
+    </Script>
+    <div class="anime">  Anime </div>
+    <div class="hub">Hub</div>
+    </div>
+    
+    <div class="Animehub" onclick="goToAboutanimehub()" title="Visit Anime Hub">
+        
+
+        <Script>
+            function goToAboutanimehub(){
+                window.location.href="aboutanimehub.html";
+
+            }
+        </Script>
+
+
+        <div class="A" title="Visit Animehub">Anime</div>
+    <div class="H" title="Visit Anime Hub">Hub</div>
+    
+        <img src="vide.png"  class="vid">
+    </div>
+     <input class="box1" title="Search" id="searchinput" area placeholder="Search" type="text" onkeyup="Search">
+   
+    
+    <script>
+function SearchAnime() {
+  let input = document.getElementById("searchInput").value.toLowerCase();
+  let animehub = document.querySelectorAll("Anime");
+
+  items.forEach(function(item) {
+    let text = item.textContent.toLowerCase();
+    
+    if (text.includes(input)) {
+      item.style.display = "";
+    } else {
+      item.style.display = "none";
+    }
+  });
+}
+</script>
+    
+</div>
+<div title="Demon Slayer">
+    <video class="DS"  muted loop
+    poster="ds.jpg"
+    onmouseover="this.play()";
+    onmouseleave="this.pause()";>
+    <Source src="DS.mp4" type="video/mp4"> </video>
+</div>
+<div title="Hunter X Hunter">
+    <video class="HXH" autoplay muted loop 
+    onmouseover="this.play()"
+    onmouseleave="this.pause()"; >
+    <source src="HXH.mp4" type="video/mp4"></video>
+</div>
+<div title="One Punch Man">
+    <video class="OPM" autoplay muted loop
+    onmouseover="this.play()";
+    onmouseleave="this.pause()";>
+    <Source src="OPM.mp4" type="video/mp4"></video>
+</div>
+<div title="One Piece">
+    <video class="OP" autoplay muted lopp
+    onmouseover="this.play()";
+    onmouseleave="this.pause()";>
+    <source src="OP.mp4" type="video/mp4"></video>
+</div>
+<div title="Black Clover">
+    <video class="BC"  autoplay muted loop 
+    onmouseover="this.play()";
+    onmouseleave="this.pause()";>
+    <source src="BC.mp4" type="video/mp4"></video>
+</div>
+
+<div title="Solo Leveling"> 
+    <video class="SL" autoplay muted loop
+    onmouseover="this.play()";
+    onmouseleave="this.pause()";>
+    <source src="SL.mp4" type="video/mp4"></video>
+</div>
+<div title=" Naruto Shippuden"> 
+    <video class="NS" autoplay muted loop 
+    onmouseover="this.play()";
+    onmouseleave="this.pause()";>
+    <source src="NS.mp4" type="video/mp4"></video>
+</div>
+<div title="Dragon Balls"> 
+    <video class="DB" autoplay muted loop
+    onmouseover="this.play()";
+    onmouseleave="this.pause()";>
+    <source src="DB.mp4" type="video/mp4"></video>
+</div>
+<div title="SPY X Family"> 
+    <video class="SXF" autoplay muted loop
+    onmouseover="this.play()";
+    onmouseleave="this.pause()";>
+    <source src="SXF.mp4" type="video/mp4"></video>
+</div>
+
+    
+
+
+</div>
+<div>
+     <h2 class="home" title="Home" onclick="goTohome()">Home</h2>
+    <Script>
+      function goTohome (){
+        window.location.href="Despairfeb24.html";
+      }
+    </Script>
+    <h2 class="action" title="Action" onclick="goToaction()">Action</h2>
+    <Script>
+      function goToaction(){
+        window.location.href="action.html";
+      }
+    </Script>
+    <h2 class="comedy" title="Comedy" onclick="goTocomedy()">Comedy</h2>
+     <Script>
+      function goTocomedy(){
+        window.location.href="comedy.html";
+      }
+    </Script>
+    </Script>
+</div>
+
+    
+</body>
+</html>
