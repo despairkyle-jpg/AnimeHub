@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+
+.action{
+    position: absolute;
+    font-weight: bold;
+    font-size: 23px;
+    color: rgb(148, 72, 31);
+    margin-top: 70px;
+    margin-left: 120px;
+    cursor: pointer;
+    background-color: rgb(215, 215, 195);
+    border-radius: 2px;
+}
+
+.action:hover{
+    opacity: 0.8;
+    background-color: rgb(168, 157, 140);
+    border-radius: 2px;
+}
+    .Dragon{
+   position: absolute;
+    object-fit: cover;
+    width: 500px;
+    height: 220px;
+    margin-top: 78px;
+    margin-left: 320px;
+   
+}
+.season{
+    position: absolute;
+    color: rgb(234, 234, 228);
+    font-size: 15px;
+    margin-top: 300px;
+    margin-left: 315px;
+}
+.container{
+    display: flex;
+    gap: 8px;
+    position: absolute;
+    margin-top: 321px;
+    margin-left: 390px;
+    text-align: center;
+    font-size: 17px;
+    
+}
+.container2{
+    display: flex;
+    gap: 8px;
+    position: absolute;
+    margin-top: 366px;
+    margin-left: 410px;
+    text-align: center;
+    font-size: 17px;
+    
+}
+.container3{
+    display: flex;
+    gap: 8px;
+    position: absolute;
+    margin-top: 410px;
+    margin-left: 423px;
+    text-align: center;
+    font-size: 17px;
+    
+}
+.container4{
+    display: flex;
+    gap: 8px;
+    position: absolute;
+    margin-top: 455px;
+    margin-left: 450px;
+    text-align: center;
+    font-size: 17px;
+    
+}
+
+.box{
+    
+    width: 25px;
+    height:20px;
+    background: rgb(156, 159, 169);
+    border: solid;
+    border-radius: 2px;
+}
+.next{
+    
+    width: 37px;
+    height:20px;
+    background: rgb(117, 127, 90);
+    border: solid;
+    border-radius: 2px;
+}
+
+  
+</style>
+<body class="body">
+
+    <div> 
+    <div class="animeHUB"  onclick="goTohighlight()" title="Visit">
+         <Script>
+        function goTohighlight(){
+            window.location.href="Highlight.html";
+        }
+    </Script>
+    <div  class="anime"   >  Anime </div>
+    <div class="hub" >Hub</div>
+    </div>
+    
+    <div class="Animehub" onclick="goToAboutanimehub()" title="Visit Anime Hub">
+         <Script>
+            function goToAboutanimehub(){
+                window.location.href="aboutanimehub.html";
+
+            }
+        </Script>
+        <div class="A" title="Visit Anime Hub">Anime</div>
+    <div class="H" title="Visit Anime Hub">Hub</div>
+    <div>
+        <img src="vide.png"  class="vid">
+    </div>
+     <input class="box1" title="Search" id="searchinput" area placeholder="Search" type="text" onkeyup="Searchbills">
+
+    </div>
+    </div>
+    <script>
+function SearchAnime() {
+  let input = document.getElementById("searchInput").value.toLowerCase();
+  let animehub = document.querySelectorAll("Anime");
+
+  items.forEach(function(item) {
+    let text = item.textContent.toLowerCase();
+    
+    if (text.includes(input)) {
+      item.style.display = "";
+    } else {
+      item.style.display = "none";
+    }
+  });
+}
+</script>
+<div>
+    <h2 class="home" title="Home" onclick="goTohome()">Home</h2>
+    <Script>
+      function goTohome (){
+        window.location.href="Despairfeb24.html";
+      }
+    </Script>
+    <h2 class="action" title="Action" onclick="goToaction()">Action</h2>
+    <Script>
+      function goToaction(){
+        window.location.href="action.html";
+      }
+    </Script>
+    <h2 class="comedy" title="Comedy" onclick="goTocomedy()">Comedy</h2>
+     <Script>
+      function goTocomedy(){
+        window.location.href="comedy.html";
+      }
+    </Script>
+</div>
+
+<div>
+    <div title=" Dragon Balls"> 
+    <video class="Dragon" autoplay muted loop 
+     onmouseover="this.play()";
+    onmouseleave="this.pause()";>
+    <source src="DB.mp4" type="video/mp4"></video>
+</div>
+
+</div>
+<div class="season">
+    <h2>D-Ball</h2>
+    <h2>D-Ball Z</h2>
+    <h2>D-Ball GT</h2>
+    <h2>D-Ball-Super</h2>
+
+
+
+</div>
+<div class="container">
+    <div style="background-color: rgb(231, 140, 29);" class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+     <div class="box">4</div>
+    <div class="box">5</div>
+    <div class="box">6</div>
+     <div class="box">7</div>
+    <div class="next">...153</div>
+   
+    
+</div>
+<div class="container2">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+     <div class="box">4</div>
+    <div class="box">5</div>
+    <div class="box">6</div>
+    <div class="next">...291</div>
+   
+    
+</div>
+
+<div class="container3">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+     <div class="box">4</div>
+    <div class="box">5</div>
+    <div class="next">...64</div>
+   
+    
+</div>
+<div class="container4">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+     <div class="box">4</div>
+    <div class="next">...131</div>
+
+    
+</body>
+</html>
