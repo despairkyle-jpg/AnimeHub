@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+
+  .action{
+    position: absolute;
+    font-weight: bold;
+    font-size: 23px;
+    color: rgb(148, 72, 31);
+    margin-top: 70px;
+    margin-left: 120px;
+    cursor: pointer;
+    background-color: rgb(163, 163, 144);
+    border-radius: 2px;
+}
+
+.action:hover{
+    opacity: 0.8;
+    background-color: rgb(168, 157, 140);
+    border-radius: 2px;
+}
+  .Naruto{
+    position: absolute;
+    object-fit: cover;
+    width: 500px;
+    height: 180px;
+    margin-top: 78px;
+    margin-left: 320px;
+    cursor: pointer;
+    
+}
+.One{
+    position:absolute;
+    object-fit: cover;
+    height: 130px;
+    width: 250px;
+    margin-top:430px;
+    margin-left: 585px;
+}
+
+.Solo{
+    position: absolute;
+    height: 130px;
+    width: 250px;
+    margin-top: 275px;
+    margin-left: 15px;
+    object-fit: cover;
+    cursor: pointer;
+   
+}
+.Demon{
+    position: absolute;
+    height: 130px;
+    width: 250px;
+    margin-top: 430px;
+    margin-left: 15px;
+    object-fit: cover;
+    cursor: pointer;
+}
+.Dragon{
+    position: absolute;
+    height: 130px;
+    width: 250px;
+    margin-top: 275px;
+    margin-left: 300px;
+    object-fit: cover;
+    cursor: pointer;
+}
+.Alche{
+    position: absolute;
+    height: 130px;
+    width: 250px;
+    margin-left: 300px;
+    margin-top: 430px;
+    object-fit: cover;
+    cursor: pointer;
+}
+.Tokyo{
+    position:absolute;
+    object-fit: cover;
+    height: 130px;
+    width: 250px;
+    margin-top:275px;
+    margin-left: 585px;
+    cursor: pointer;
+}
+
+.Kaisen{
+    position:absolute;
+    object-fit: cover;
+    height: 130px;
+    width: 250px;
+    margin-top:275px;
+    margin-left: 870px;
+    cursor: pointer;
+    
+}
+.Titan{
+    position:absolute;
+    object-fit: cover;
+    height: 130px;
+    width: 250px;
+    margin-top:430px;
+    margin-left: 870px;
+    cursor: pointer;
+}
+</style>
+<body class="body">
+
+    <div> 
+    <div class="animeHUB" onclick="goTohighlight()" title="Visit">
+       <Script>
+        function goTohighlight(){
+            window.location.href="Highlight.html";
+        }
+    </Script>
+    </div>
+    <div  class="anime"   >  Anime </div>
+    <div class="hub" >Hub</div>
+    </div>
+    
+    <div class="Animehub" onclick="goToAboutanimehub()" title="Visit Anime Hub">
+
+       <Script>
+            function goToAboutanimehub(){
+                window.location.href="aboutanimehub.html";
+
+            }
+        </Script>
+
+        
+
+        <div class="A" title="Visit Anime Hub">Anime</div>
+    <div class="H" title="Visit Anime Hub">Hub</div>
+    <div>
+        <img src="vide.png"  class="vid">
+    </div>
+     <input class="box1" title="Search" id="searchinput" area placeholder="Search" type="text" onkeyup="SearchAnime">
+
+    </div>
+    
+    <script>
+function SearchAnime() {
+  let input = document.getElementById("searchInput").value.toLowerCase();
+  let animehub = document.querySelectorAll("Anime");
+
+  items.forEach(function(item) {
+    let text = item.textContent.toLowerCase();
+    
+    if (text.includes(input)) {
+      item.style.display = "";
+    } else {
+      item.style.display = "none";
+    }
+  });
+}
+</script>
+<div>
+    <h2 class="home" title="Home" onclick="goTohome()">Home</h2>
+    <Script>
+      function goTohome (){
+        window.location.href="Despairfeb24.html";
+      }
+    </Script>
+    <h2 class="action" title="Action" onclick="goToaction()">Action</h2>
+    <Script>
+      function goToaction(){
+        window.location.href="action.html";
+      }
+    </Script>
+    <h2 class="comedy" title="Comedy" onclick="goTocomedy()">Comedy</h2>
+     <Script>
+      function goTocomedy(){
+        window.location.href="comedy.html";
+      }
+    </Script>
+</div>
+<div>
+  <div title=" Naruto Shippuden"> 
+    <video class="Naruto" onclick="goToepisodes()" muted loop
+    poster="Ns.jpg" 
+    onmouseover="this.play()";
+    onmouseleave="this.pause()";
+    >
+    <source src="NS.mp4" type="video/mp4"></video>
+</div>
+<Script>
+  function goToepisodes(){
+    window.location.href="episodes.html";
+  }
+</Script>
+
+<div title="Solo Leveling"> 
+    <video class="Solo" onclick="goTosoloepisode()" muted loop
+    poster="Sl.jpg"
+    onmouseover="this.play()";
+    onmouseleave="this.pause()";>
+    <source src="SL.mp4" type="video/mp4"></video>
+</div>
+<Script>
+  function goTosoloepisode(){
+    window.location.href="soloepisode.html";
+  }
+</Script>
+
+<div title="Demon Slayer">
+    <video class="Demon" onclick="goToDSepisode()" muted loop
+     poster="ds.jpg"
+    onmouseover="this.play()";
+    onmouseleave="this.pause()";>
+    <Source src="DS.mp4" type="video/mp4"> </video>
+</div>
+<Script>
+  function goToDSepisode(){
+    window.location.href="DSepisode.html";
+  }
+</Script>
+
+<div title="Dragon Balls"> 
+    <video class="Dragon" onclick="Dragonepisode()" muted loop
+    poster="Db.webp"
+    onmouseover="this.play()";
+    onmouseleave="this.pause()";>
+    <source src="DB.mp4" type="video/mp4"></video>
+</div>
+<Script>
+  function Dragonepisode(){
+    window.location.href="Dragonepisode.html"
+  }
+</Script>
+
+<div title="One Punch Man">
+    <video class="One" onclick="OPMep()" muted loop
+    poster="Opm.jpg"
+    onmouseover="this.play()";
+    onmouseleave="this.pause()";>
+    <Source src="OPM.mp4" type="video/mp4"></video>
+</div>
+
+<Script>
+function OPMep(){
+  window.location.href="OPMep.html";
+}
+</Script>
+
+
+<div title="Fullmental Alchemist">
+    <video class="Alche" onclick="Alchemist()" muted loop 
+    poster="Fa.jpg"
+    onmouseover="this.play()";
+    onmouseleave="this.pause()";>
+    <source src="achemist.mp4" type="video/mp4"></video>
+</div>
+
+<Script>
+  function Alchemist(){
+    window.location.href="AlchemistEP.html";
+  }
+</Script>
+
+<div title="Tokyo Ghoul"> 
+    <video class="Tokyo" onclick="TokyoEP()" muted loop
+    poster="Tg.jpg"
+    onmouseover="this.play()";
+    onmouseleave="this.pause()";>
+    <source src="tokyo.mp4" type="video/mp4"></video>
+</div>
+<Script>
+  function TokyoEP(){
+    window.location.href="TokyoEP.html";
+  }
+</Script>
+
+
+<div title="Jujutsu Kaisen"> 
+    <video class="Kaisen" onclick="JujutsuEP()"  muted loop
+    poster="Jk.jpg"
+    onmouseover="this.play()";
+    onmouseleave="this.pause()";>
+    <source src="Kaisen.mp4" type="video/mp4"></video>
+</div>
+<Script>
+  function JujutsuEP(){
+    window.location.href="JujutsuEP.html";
+  }
+</Script>
+
+<div title="Attack on Titan"> 
+    <video class="Titan" onclick="AOTep()"  muted loop
+    poster="At.jpg"
+    onmouseover="this.play()";
+    onmouseleave="this.pause()";>
+    <source src="Titan.mp4" type="video/mp4"></video>
+</div>
+<Script>
+  function AOTep(){
+    window.location.href="AOTep.html";
+  }
+</Script>
+
+
+</div>
+    
+</body>
+</html>

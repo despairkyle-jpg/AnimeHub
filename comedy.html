@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+
+  .comedy{
+    position: absolute;
+    font-weight: bold;
+    font-size: 23px;
+    color: rgb(148, 72, 31);
+    margin-top: 70px;
+    margin-left: 220px;
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: rgb(163, 163, 144);
+}
+.comedy:hover{
+    opacity: 0.8;
+    background-color: rgb(168, 157, 140);
+    border-radius: 2px;
+
+}
+.Gintama{
+    position: absolute;
+    object-fit: cover;
+    width: 500px;
+    height: 180px;
+    margin-top: 78px;
+    margin-left: 320px;
+    cursor: pointer;
+    
+}
+.KonoSuba{
+    position: absolute;
+    height: 130px;
+    width: 250px;
+    margin-top: 275px;
+    margin-left: 15px;
+    object-fit: cover;
+    cursor: pointer;
+   
+}
+.Nichijou{
+    position: absolute;
+    height: 130px;
+    width: 250px;
+    margin-top: 430px;
+    margin-left: 15px;
+    object-fit: cover;
+    cursor: pointer;
+}
+.Part-Timer{
+    position: absolute;
+    height: 130px;
+    width: 250px;
+    margin-top: 275px;
+    margin-left: 300px;
+    object-fit: cover;
+    cursor: pointer;
+}
+.Host-club{
+    position: absolute;
+    height: 130px;
+    width: 250px;
+    margin-left: 300px;
+    margin-top: 430px;
+    object-fit: cover;
+    cursor: pointer;
+}
+.Blue{
+    position:absolute;
+    object-fit: cover;
+    height: 130px;
+    width: 250px;
+    margin-top:275px;
+    margin-left: 585px;
+    cursor: pointer;
+}
+.Saiki{
+    position:absolute;
+    object-fit: cover;
+    height: 130px;
+    width: 250px;
+    margin-top:430px;
+    margin-left: 585px;
+}
+.Asobi{
+    position:absolute;
+    object-fit: cover;
+    height: 130px;
+    width: 250px;
+    margin-top:275px;
+    margin-left: 870px;
+    cursor: pointer; 
+}
+.Daily{
+    position:absolute;
+    object-fit: cover;
+    height: 130px;
+    width: 250px;
+    margin-top:430px;
+    margin-left: 870px;
+    cursor: pointer;
+}
+</style>
+<body class="body">
+
+    <div> 
+    <div class="animeHUB"  onclick="goTohighlight()" title="Visit">
+         <Script>
+        function goTohighlight(){
+            window.location.href="Highlight.html";
+        }
+    </Script>
+    
+    <div  class="anime"   >  Anime </div>
+    <div class="hub" >Hub</div>
+    </div>
+    
+    <div class="Animehub" onclick="goToAboutanimehub()" title="Visit Anime Hub">
+         <Script>
+            function goToAboutanimehub(){
+                window.location.href="aboutanimehub.html";
+
+            }
+        </Script>
+      
+        <div class="A" title="Visit Anime Hub">Anime</div>
+    <div class="H" title="Visit Anime Hub">Hub</div>
+    <div>
+      
+        <img src="vide.png"  class="vid">
+    </div>
+     <input class="box1" title="Search" id="searchinput" area placeholder="Search" type="text" onkeyup="SearhAnime">
+
+    
+    </div>
+    <script>
+function SearchAnime() {
+  let input = document.getElementById("searchInput").value.toLowerCase();
+  let animehub = document.querySelectorAll("Anime");
+
+  items.forEach(function(item) {
+    let text = item.textContent.toLowerCase();
+    
+    if (text.includes(input)) {
+      item.style.display = "";
+    } else {
+      item.style.display = "none";
+    }
+  });
+}
+</script>
+<div>
+    <h2 class="home" title="Home" onclick="goTohome()">Home</h2>
+    <Script>
+      function goTohome (){
+        window.location.href="Despairfeb24.html";
+      }
+    </Script>
+    <h2 class="action" title="Action" onclick="goToaction()">Action</h2>
+    <Script>
+      function goToaction(){
+        window.location.href="action.html";
+      }
+    </Script>
+    <h2 class="comedy" title="Comedy" onclick="goTocomedy()">Comedy</h2>
+     <Script>
+      function goTocomedy(){
+        window.location.href="comedy.html";
+      }
+    </Script>
+</div>
+<div>
+   <div title="Gintama"> 
+    <video class="Gintama" onclick="GitamaEP()"  muted  loop 
+    poster="Ginta.jpg"
+    onmouseover="this.play()";
+    onmouseleave="this.pause()";>
+    <source src="Gintama.mp4" type="video/mp4"></video>
+</div>
+
+<Script>
+function GitamaEP(){
+  window.location.href="GitamaEP.html";
+}
+</Script>
+
+<div title="KonoSuba"> 
+    <video class="KonoSuba" onclick="KonoSubaEP()"muted loop
+    poster="Ks.jpg"
+    onmouseover="this.play()";
+    onmouseleave="this.pause()";>
+    <source src="KonoSuba.mp4" type="video/mp4"></video>
+</div>
+<Script>
+  function KonoSubaEP(){
+    window.location.href="KonoSubaEP.html";
+  }
+</Script>
+<div title="Nichijou">
+    <video class="Nichijou" onclick="Nichijou()" muted loop
+    poster="Nj.jpg"
+    onmouseover="this.play()";
+    onmouseleave="this.pause()";>
+    <Source src="nichijou.mp4" type="video/mp4"> </video>
+</div>
+<Script>
+function Nichijou(){
+  window.location.href="NichijouEP.html";
+}
+</Script>
+
+<div title=" The Devil is a Part-Timer"> 
+    <video class="Part-Timer" onclick="Part_TimerEp()" muted loop
+    poster="Dpt.jpg"
+    onmouseover="this.play()";
+    onmouseleave="this.pause()";>
+    <source src="part-timer.mp4" type="video/mp4"></video>
+</div>
+
+<Script>
+  function Part_TimerEp(){
+    window.location.href= "Part-TimerEP.html";
+  }
+</Script>
+<div title="Ouran HighSchool Host Club">
+    <video class="Host-club" onclick="Host_club()"  muted loop 
+    poster="Hc.webp"
+    onmouseover="this.play()";
+    onmouseleave="this.pause()";>
+    <source src="Host-school.mp4" type="video/mp4"></video>
+</div>
+<Script>
+  function Host_club(){
+    window.location.href="Host_club.html";
+  }
+</Script>
+
+<div title="Grand Blue"> 
+    <video class="Blue" onclick="GrandEP()" muted loop
+    poster="Gb.jpg"
+    onmouseover="this.play()";
+    onmouseleave="this.pause()";>
+    <source src="Grand_blue.mp4" type="video/mp4"></video>
+</div>
+<Script>
+  function GrandEP(){
+    window.location.href="GrandEP.html";
+  }
+</Script>
+
+<div title="The Disastrous Life of saiki K.">
+    <video class="Saiki" onclick="SaikiEP()" muted loop
+    poster="Ls.jpg"
+    onmouseover="this.play()";
+    onmouseleave="this.pause()";>
+    <Source src="Saiki.mp4" type="video/mp4"></video>
+</div>
+<Script>
+  function SaikiEP(){
+    window.location.href="SaikiEP.html";
+  }
+</Script>
+
+<div title="Asobi Asobase"> 
+    <video class="Asobi" onclick="AsobiEP()" muted loop
+    poster="Aa.jpg"
+    onmouseover="this.play()";
+    onmouseleave="this.pause()";>
+    <source src="Asobi.mp4" type="video/mp4"></video>
+</div>
+<Script>
+  function AsobiEP(){
+    window.location.href="AsobiEP.html";
+  }
+</Script>
+
+<div title="Daily Lives of HighScool Boys"> 
+    <video class="Daily" onclick="Daily_livesEP()" muted loop
+    poster="Hl.webp"
+    onmouseover="this.play()";
+    onmouseleave="this.pause()";>
+    <source src="Daily_lives.mp4" type="video/mp4"></video>
+</div>
+
+<Script>
+  function Daily_livesEP(){
+    window.location.href="Daily_livesEP.html";
+  }
+</Script>
+
+
+</div>
+    
+</body>
+</html>
